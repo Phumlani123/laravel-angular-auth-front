@@ -7,6 +7,10 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { BeforeLoginService } from './Services/before-login.service';
 import { AfterLoginService } from './Services/after-login.service';
+import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ClientComponent } from './components/client/client.component';
+import { NewClientComponent } from './components/new-client/new-client.component';
 
 const routes: Routes = [
 
@@ -34,6 +38,27 @@ const routes: Routes = [
     path:'response-password',
     component: ResponseResetComponent,
     canActivate: [BeforeLoginService]
+  },
+
+  {
+    path:'home',
+    component: HomeComponent
+  },
+
+  {path: '' , redirectTo:'/home',pathMatch:'full'},
+
+  {
+    path:'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path:'client/:id',
+    component: ClientComponent
+  },
+
+  {
+    path:'new-client',
+    component: NewClientComponent
   }
 
 

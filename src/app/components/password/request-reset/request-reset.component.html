@@ -1,41 +1,58 @@
-<div class="mt-4 col-8 offset-2">
-  <div class="card">
-    <div class="card-header">
-      Reset your passsword
-    </div>
-    <div class="card-body">
-      <div class="card-body">
-        
-      </div>
-      <form #requestResetForm=ngForm (ngSubmit)="onSubmit()">
+
+
+
+<body class="d-flex align-items-center bg-auth border-top border-top-2 border-primary">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-md-5 col-lg-6 col-xl-4 px-lg-6 my-5">
+              
+    
+          <h1 class="display-4 text-center mb-3">
+            Reset your passsword
+          </h1>
+    
+          <p class="text-muted text-center mb-5">
+            
+          </p>
+          
+          
+          <form #requestResetForm=ngForm (ngSubmit)="onSubmit()">
 
        
 
-          <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-              <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" [(ngModel)]="form.email" required>
-            </div>
-          </div>
-          <!-- <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-            <div class="col-sm-10">
-              <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password" [(ngModel)]="form.password" required>
-            </div>
-          </div> -->
-         
-          <div class="form-group row">
-            <div class="col-sm-10 offset-2">
-              <button type="submit" class="btn btn-primary" [disabled]="!requestResetForm.valid">Reset Your Password</button>
-            
-               
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" [(ngModel)]="form.email" required>
+                </div>
               </div>
-          </div>
-        
-        </form>
-
-        
-        
-      </div>
-  </div>
-</div>
+              <!-- <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password" [(ngModel)]="form.password" required>
+                </div>
+              </div> -->
+             
+              <div class="form-group row">
+                <div class="col-sm-10 offset-2">
+                  <button type="submit" class="btn btn-primary" [disabled]="!requestResetForm.valid">Reset Your Password</button>
+                
+                   
+                  </div>
+              </div>
+            
+            </form>
+    
+          
+    
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 col-xl-8 d-none d-lg-block">
+          
+       
+          <div class="bg-cover vh-100 mt-n1 mr-n3" style="background-image: url(assets/img/covers/auth-side-cover.jpg);"></div>
+    
+        </div>
+      </div> 
+    </div>
+    
+    </body>

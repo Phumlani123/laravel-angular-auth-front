@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JarwisService } from 'src/app/Services/jarwis.service';
+import {Client} from 'src/app/client.interface';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+
+  data: any;
+
+
+
+  constructor(private Jarwis: JarwisService) { }
 
   ngOnInit() {
+
+   this.Jarwis.getClients()
+      .subscribe(
+        
+        (data)=>{
+            console.log(data);
+            this.data = data;
+        }
+      );
   }
+
+
+
+       
+       
 
 }

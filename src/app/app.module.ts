@@ -12,6 +12,11 @@ import { RequestResetComponent } from './components/password/request-reset/reque
 import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
+import { HomeComponent } from './home/home.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ClientComponent } from './components/client/client.component';
+import { NewClientComponent } from './components/new-client/new-client.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
     SignupComponent,
     ProfileComponent,
     RequestResetComponent,
-    ResponseResetComponent
+    ResponseResetComponent,
+    HomeComponent,
+    SidebarComponent,
+    DashboardComponent,
+    ClientComponent,
+    NewClientComponent
   ],
   imports: [
     BrowserModule,

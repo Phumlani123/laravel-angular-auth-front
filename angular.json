@@ -84,9 +84,19 @@
 
              
               "src/styles.css",
-              "node_modules/ng-snotify/styles/material.css"
+              "node_modules/ng-snotify/styles/material.css",
+              "/src/assets/theme-css/feather.min.css",
+              "/src/assets/theme-css/vs2015.css",
+              "/src/assets/theme-css/quill.core.css",
+              "/src/assets/theme-css/select2.min.css",
+              "/src/assets/theme-css/flatpickr.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "/src/assets/theme-js/Chart.extension.min.js",
+              "/src/assets/theme-js/Chart.min.js",
+              "/src/assets/theme-js/theme.min.js"
+
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

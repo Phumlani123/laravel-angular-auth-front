@@ -1,3 +1,146 @@
-<p>
-  profile works!
-</p>
+
+
+<div class="header main-content">
+
+    <!-- Image -->
+    <img src="assets/img/covers/profile-cover-1.jpg" class="header-img-top" alt="...">
+    
+    <div class="container-fluid">
+
+      <!-- Body -->
+      <div class="header-body mt-n5 mt-md-n6">
+        <div class="row align-items-end">
+          <div class="col-auto">
+            
+            <!-- Avatar -->
+            <div class="avatar avatar-xxl header-avatar-top">
+              <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle border border-4 border-body">
+            </div>
+
+          </div>
+          <div class="col mb-3 ml-n3 ml-md-n2">
+            
+            <!-- Pretitle -->
+            <h6 class="header-pretitle">
+              Webcare
+            </h6>
+
+            <!-- Title -->
+            <h1 class="header-title">
+              Flint Clients
+            </h1>
+
+          </div>
+          <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+            
+            <!-- Button -->
+            <a routerLink="/new-client" class="btn btn-primary d-block d-md-inline-block">
+              Add client
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center">
+          <div class="col">
+            
+            <!-- Nav -->
+            <ul class="nav nav-tabs nav-overflow header-tabs">
+              <li class="nav-item">
+                <a href="profile-posts.html" class="nav-link">
+                  Clients
+                </a>
+              </li>
+             
+            </ul>
+
+          </div>
+        </div>
+      </div> <!-- / .header-body -->
+
+    </div>
+  </div>
+
+
+  <div class=" main-content" >
+      <div class="row listAlias" >
+        
+        <div class="col-12 col-md-6 col-xl-4" *ngFor="let client of data.clients">
+
+          <!-- Card -->
+          <div class="card" >
+            <a href="project-overview.html">
+              <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="card-img-top">
+            </a>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col">
+              
+                  <!-- Title -->
+                  <h4 class="card-title mb-2 name">
+                    <a routerLink="/client/{{client.id}}">{{client.name}}</a>
+                  </h4>
+    
+                  <!-- Subtitle -->
+                  <p class="card-text small text-muted">
+                    Updated 4hr ago
+                  </p>
+    
+                </div>
+                <div class="col-auto">
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fe fe-more-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#!" class="dropdown-item">
+                        Update
+                      </a>
+                      <a  class="dropdown-item">
+                        Delete
+                      </a>
+                      
+                    </div>
+                  </div>
+    
+                </div>
+              </div> <!-- / .row -->
+    
+              <!-- Divider -->
+              <hr>
+    
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto">
+    
+                      <div class="small mr-2">29%</div>
+                      
+                    </div>
+                    <div class="col">
+                      
+                      <!-- Progress -->
+                      <div class="progress progress-sm">
+                        <div class="progress-bar" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+    
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+            
+              </div> <!-- / .row -->
+    
+            </div> <!-- / .card-body -->
+          </div>
+          
+      
+      
+      </div>
+    </div>
+
+ 
+
+    </div>
+    
+
